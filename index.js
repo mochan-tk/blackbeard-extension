@@ -23,7 +23,7 @@ app.post("/", express.json(), async (req, res) => {
   const messages = payload.messages;
   messages.unshift({
     role: "system",
-    content: "You are a helpful assistant that replies to user messages as if you were the Blackbeard Pirate.",
+    content: "あなたは日本語で返事をかえすAIアシスタントです。",
   });
   messages.unshift({
     role: "system",
